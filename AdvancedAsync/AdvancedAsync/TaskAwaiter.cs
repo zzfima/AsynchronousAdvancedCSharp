@@ -6,7 +6,7 @@ namespace AdvancedAsync
 {
     internal class TaskAwaiter
     {
-        public static async Task Main(string[] args)
+        public static async Task MainTaskAwaiter(string[] args)
         {
             /* EnumeratorExample shall include GetEnumerator method. No need interface
             EnumeratorExample enumeratorExample = new EnumeratorExample();
@@ -22,7 +22,9 @@ namespace AdvancedAsync
             await 5;
             */
 
+            /* 
             await Process.Start("notepad.exe");
+            */
         }
     }
 
