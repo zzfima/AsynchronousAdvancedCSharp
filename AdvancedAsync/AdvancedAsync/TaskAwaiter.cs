@@ -6,13 +6,19 @@ namespace AdvancedAsync
     {
         public static async Task Main(string[] args)
         {
-            /*
+            /* EnumeratorExample shall include GetEnumerator method. No need interface
             EnumeratorExample enumeratorExample = new EnumeratorExample();
             foreach (var e in enumeratorExample) { }
             */
 
+            /* TimeSpan.FromSeconds shall include GetAwaiter method. No need interface
             await Task.Delay(TimeSpan.FromSeconds(1));
-            await TimeSpan.FromSeconds(1).GetAwaiter();
+            await TimeSpan.FromSeconds(1);
+            */
+
+            /* int shall include GetAwaiter method. No need interface
+            await 5;
+            */
         }
     }
 
