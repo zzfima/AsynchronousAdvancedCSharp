@@ -1,6 +1,7 @@
-﻿internal class TeaMaker
+﻿//from https://www.youtube.com/watch?v=il9gl8MH17s&ab_channel=RawCoding
+internal class TeaMaker
 {
-    private async static Task Main(string[] args)
+    private async static Task MainTeaMaker(string[] args)
     {
         var res = await MakeTeaAsync();
         Console.WriteLine(res);
