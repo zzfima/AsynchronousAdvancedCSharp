@@ -1,5 +1,7 @@
 ﻿//from https://www.youtube.com/watch?v=RqJESGHEMDY&ab_channel=FullStackAmigo
 
+using System.Diagnostics;
+
 namespace AdvancedAsync
 {
     internal class TaskAwaiter
@@ -19,6 +21,8 @@ namespace AdvancedAsync
             /* int shall include GetAwaiter method. No need interface
             await 5;
             */
+
+            await Process.Start("notepad.exe");
         }
     }
 
