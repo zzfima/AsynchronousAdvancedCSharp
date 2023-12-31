@@ -3,7 +3,7 @@
 
 internal class ChannelStateMachineProgram
 {
-    public static async Task Main(string[] args)
+    public static async Task MainAmigo(string[] args)
     {
         Amigo amigo = new Amigo();
         await amigo;
