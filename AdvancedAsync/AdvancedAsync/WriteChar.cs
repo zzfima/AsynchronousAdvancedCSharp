@@ -4,10 +4,10 @@ namespace AdvancedAsync
 {
 	internal class WriteChar
 	{
-		private static void Main(string[] args)
+		private static async Task Main(string[] args)
 		{
 			$"1. main started ThreadID: {Thread.CurrentThread.ManagedThreadId}".Dump();
-			WriteSymbolAsync('#');
+			await WriteSymbolAsync('#');
 			WriteSymbol('*');
 			$"6. main finished ThreadID: {Thread.CurrentThread.ManagedThreadId}".Dump();
 
