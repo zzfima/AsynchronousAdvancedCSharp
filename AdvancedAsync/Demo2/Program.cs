@@ -26,8 +26,11 @@ internal class Program
         }
 
         Console.WriteLine("Finished");
+
+        await Task.Delay(2000);
     }
 
+    //shall be task - wrap exception
     static async void DelayAndThrowAsync()
     {
         await Task.Delay(1000);
