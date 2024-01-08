@@ -15,7 +15,7 @@ internal class Program
     static async Task MainAsync()
     {
         Console.WriteLine("Started");
-
+        TaskScheduler.UnobservedTaskException += TaskScheduler_UnobservedTaskException;
         try
         {
             DelayAndThrowAsync();
@@ -28,10 +28,16 @@ internal class Program
         Console.WriteLine("Finished");
 
         await Task.Delay(2000);
+        GC.Collect();
+    }
+
+    private static void TaskScheduler_UnobservedTaskException(object? sender, UnobservedTaskExceptionEventArgs e)
+    {
+        //
     }
 
     //shall be task - wrap exception
-    static async void DelayAndThrowAsync()
+    static async Task DelayAndThrowAsync()
     {
         await Task.Delay(1000);
         throw new InvalidOperationException("fff");
