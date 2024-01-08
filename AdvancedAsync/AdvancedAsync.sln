@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "Demo2\Demo2.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo3AsyncLambda", "Demo3AsyncLambda\Demo3AsyncLambda.csproj", "{A5F196FF-1302-4B82-A177-553B95BD2414}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo5BlockedTask", "Demo5BlockedTask\Demo5BlockedTask.csproj", "{B11BFC31-6BCD-453F-941B-A49DB5256993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A5F196FF-1302-4B82-A177-553B95BD2414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5F196FF-1302-4B82-A177-553B95BD2414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5F196FF-1302-4B82-A177-553B95BD2414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
