@@ -24,13 +24,26 @@ namespace Demo5BlockedTask
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             txt.Text = "waiting";
-            DelayAsync().Wait();
+            await DelayAsync();
             txt.Text = "waiting complete";
         }
 
         async Task DelayAsync()
         {
-            await Task.Delay(5000);
+            try
+            {
+                await Task.Delay(1000);
+                await Task.FromException(new Exception(""));
+            }
+            catch when (DateTime.Now.Minute < 30)
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
