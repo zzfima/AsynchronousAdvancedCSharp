@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Height="50" Width="100" Click="Button_Click1" Margin="479,192,221,192"></Button>
-        <Button Height="50" Width="100" Click="Button_Click2" Margin="215,182,485,202"></Button>
+        <Button Content="await Task.Run" Click="Button_Click1" Margin="227,182,454,180"/>
+        <Button Content="await WaitAsync" Click="Button_Click2" Margin="88,182,586,180"/>
+        <Button Content="error with void"  Margin="368,182,302,180"  Click="Button_Click3"/>
+        <Button Content="error with async void"  Margin="532,187,122,180"  Click="Button_Click4"/>
         <TextBox x:Name="txt" HorizontalAlignment="Left" Height="55" Margin="338,283,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="146"/>
     </Grid>
 </Window>

@@ -45,5 +45,16 @@ namespace WpfApp1
             Debug.WriteLine("SynchronizationContext: " + SynchronizationContext.Current?.ToString());
             Debug.WriteLine("***********************");
         }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private async void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            await Task.Delay(1000);
+            throw new NotImplementedException();
+        }
     }
 }
