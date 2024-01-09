@@ -1,4 +1,4 @@
-﻿internal class ProgramQuerySyntactics
+﻿internal class ProgramQuerySyntax
 {
     record Configuration(IList<Client> Clients);
     record Client(IList<Stage> Stages, string Name);
@@ -115,7 +115,7 @@
             }
         }
 
-        //query syntactics
+        //query syntax
         var hosts2 =
             from client in configuration.Clients
             where client.Name == clientName
