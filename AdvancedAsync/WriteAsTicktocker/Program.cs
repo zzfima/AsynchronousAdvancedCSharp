@@ -94,9 +94,9 @@ internal class Program
     record Host(string Name);
     */
 
-    static List<Host> FindHost(Configuration configuration, string clientName, string stageName, string hostName)
+    static IEnumerable<Host> FindHost(Configuration configuration, string clientName, string stageName, string hostName)
     {
-        List<Host> hosts = new List<Host>();
+        List<Host> hosts1 = new List<Host>();
         foreach (var client in configuration.Clients)
         {
             if (client.Name == clientName)
@@ -109,7 +109,7 @@ internal class Program
                         {
                             if (host.Name == hostName)
                             {
-                                hosts.Add(host);
+                                hosts1.Add(host);
                             }
                         }
                     }
@@ -117,7 +117,19 @@ internal class Program
             }
         }
 
+        var hosts2 =
+            from client in configuration.Clients
+            where client.Name == clientName
 
-        return hosts;
+            from stage in client.Stages
+            where stage.Name == stageName
+
+            from host in stage.Hosts
+            where host.Name == hostName
+
+            select host;
+
+
+        return hosts2;
     }
 }
