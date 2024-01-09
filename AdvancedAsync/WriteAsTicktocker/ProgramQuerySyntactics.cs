@@ -1,13 +1,11 @@
-﻿// from https://www.youtube.com/watch?v=j1vsXfhYrn8&ab_channel=DotNext
-
-internal class Program
+﻿internal class ProgramQuerySyntactics
 {
     record Configuration(IList<Client> Clients);
     record Client(IList<Stage> Stages, string Name);
     record Stage(IList<Host> Hosts, string Name);
     record Host(string Name, int ping);
 
-    private static void Main(string[] args)
+    private static void MainQuerySyntactics(string[] args)
     {
         var configuration = new Configuration(
             new List<Client>() {
