@@ -12,6 +12,7 @@ internal class ClassSurrogateToupleSwitchExpression
         Assert.AreEqual(ConvertMultiValues("Undfsefifsafaned", false), "Undfsefifsafaned");
     }
 
+    //if return is not includes "?", warning will be created because we can return null but we don't tell it explicitly
     static string? ConvertMultiValues(string? strValue, bool normalize)
     {
         return (strValue, normalize) switch
