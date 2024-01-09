@@ -117,6 +117,7 @@ internal class Program
             }
         }
 
+        //query syntactics
         var hosts2 =
             from client in configuration.Clients
             where client.Name == clientName
