@@ -2,7 +2,7 @@
 
 internal class ClassSwitchExpression
 {
-    private static void Main(string[] args)
+    private static void MainSwitchExpression(string[] args)
     {
         Assert.AreEqual(ConvertValues("undefined"), "undefined");
         Assert.AreEqual(ConvertValues("undefiNed"), "undefined");
