@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo3AsyncLambda", "Demo3As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo5BlockedTask", "Demo5BlockedTask\Demo5BlockedTask.csproj", "{B11BFC31-6BCD-453F-941B-A49DB5256993}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteAsTicktocker", "WriteAsTicktocker\WriteAsTicktocker.csproj", "{98771D8D-1AA3-45B8-AC29-35406600302D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B11BFC31-6BCD-453F-941B-A49DB5256993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98771D8D-1AA3-45B8-AC29-35406600302D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98771D8D-1AA3-45B8-AC29-35406600302D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98771D8D-1AA3-45B8-AC29-35406600302D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98771D8D-1AA3-45B8-AC29-35406600302D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
