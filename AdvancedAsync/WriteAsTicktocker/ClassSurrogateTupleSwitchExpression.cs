@@ -2,7 +2,7 @@
 
 internal class ClassSurrogateTupleSwitchExpression
 {
-    private static void Main(string[] args)
+    private static void MainSurrogateTupleSwitchExpression(string[] args)
     {
         Assert.AreEqual(ConvertMultiValues("undefined", true), "undefined");
         Assert.AreEqual(ConvertMultiValues("Undefined", true), "undefined");

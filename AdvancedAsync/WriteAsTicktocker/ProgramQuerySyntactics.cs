@@ -5,7 +5,7 @@
     record Stage(IList<Host> Hosts, string Name);
     record Host(string Name, int ping);
 
-    private static void MainQuerySyntactics(string[] args)
+    private static void Main(string[] args)
     {
         var configuration = new Configuration(
             new List<Client>() {
