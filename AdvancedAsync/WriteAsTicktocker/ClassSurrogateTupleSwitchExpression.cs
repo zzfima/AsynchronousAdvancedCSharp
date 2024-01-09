@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-internal class ClassSurrogateToupleSwitchExpression
+internal class ClassSurrogateTupleSwitchExpression
 {
     private static void Main(string[] args)
     {
