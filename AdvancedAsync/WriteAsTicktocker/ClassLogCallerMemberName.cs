@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 internal class ClassLogCallerMemberName
 {
-	private static void Main(string[] args)
+	private static void MainLogCallerMemberName(string[] args)
 	{
 		DoWork();
 		Console.ReadLine();
