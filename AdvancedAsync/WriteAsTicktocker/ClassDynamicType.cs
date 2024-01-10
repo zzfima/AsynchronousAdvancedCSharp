@@ -3,7 +3,7 @@
 	record FirstType(string Name);
 	record SecondType(string Name);
 
-	private static void Main(string[] args)
+	private static void MainDynamicType(string[] args)
 	{
 		Console.WriteLine();
 
