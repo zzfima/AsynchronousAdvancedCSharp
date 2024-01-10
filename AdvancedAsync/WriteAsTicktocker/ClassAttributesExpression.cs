@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 internal class ClassAttributesExpression
 {
-	private static void Main(string[] args)
+	private static void MainAttributesExpression(string[] args)
 	{
 		CheckRange(5.6, 11.2);
 		Console.ReadLine();
