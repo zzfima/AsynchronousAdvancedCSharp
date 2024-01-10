@@ -14,4 +14,5 @@ from https://www.youtube.com/watch?v=j1vsXfhYrn8&ab_channel=DotNext
 1. Value Type Array Iterate And Change 32:25
 1. Using dynamic instead of is 34:14
 1. Increment Nullable Using Lifted Operator 37:23
-1. 40:13
+1. Switch with Predicate 40:13
+1. Lightweight types 42:25
