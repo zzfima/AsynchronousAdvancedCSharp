@@ -1,7 +1,7 @@
 ﻿
 internal class ClassSlices
 {
-    private static void Main(string[] args)
+    private static void MainSlices(string[] args)
     {
         Console.WriteLine();
         Console.WriteLine($"{Except2Lasts("babanda")}");
