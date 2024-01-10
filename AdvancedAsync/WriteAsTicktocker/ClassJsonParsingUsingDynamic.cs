@@ -5,7 +5,7 @@ namespace WriteAsTicktocker
 {
 	internal class ClassJsonParsingUsingDynamic
 	{
-		private static void Main(string[] args)
+		private static void MainJsonParsingUsingDynamic(string[] args)
 		{
 			Console.WriteLine();
 
@@ -31,7 +31,6 @@ namespace WriteAsTicktocker
 			var items = (from person in persons
 						 group person by person.Age into ageGroup
 						 select (age: ageGroup.Key, count: ageGroup.Count())).ToList();
-
 
 			return items;
 		}
