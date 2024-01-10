@@ -2,7 +2,7 @@
 
 internal class ClassDictionaryCollectionsMarshal
 {
-	private static void Main(string[] args)
+	private static void MainDictionaryCollectionsMarshal(string[] args)
 	{
 		Console.WriteLine();
 		Dictionary<string, int> map = new Dictionary<string, int>();

@@ -10,4 +10,6 @@ from https://www.youtube.com/watch?v=j1vsXfhYrn8&ab_channel=DotNext
 1. AsSpan vs string allocations 23:36
 1. Is operator 27:35
 1. Slices 28:53
-1. Dictionary 31:00
+1. Dictionary CollectionsMarshal 31:00
+1. Value Type Array Iterate And Change 32:25
+1. Using dynamic instead of is 34:14
